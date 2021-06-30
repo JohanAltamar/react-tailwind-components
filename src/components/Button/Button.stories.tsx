@@ -6,9 +6,6 @@ import { Button, ButtonProps } from './Button';
 export default {
     title: 'Example TS/Button',
     component: Button,
-    argTypes: {
-        backgroundColor: { control: 'color'}
-    },
 } as Meta;
 
 const Template: Story<ButtonProps> = args => <Button {...args}/>;
@@ -17,5 +14,6 @@ export const Primary = Template.bind({});
 Primary.args = {
     primary: true,
     label: 'Primary',
-    size: 'large',
+    size: 'medium',
+    backgroundColor: 'bg-blue-200'
 }
